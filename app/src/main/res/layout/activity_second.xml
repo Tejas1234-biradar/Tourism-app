@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#FF5F2C"
+        android:text="Login"
+        android:textColor="#001427"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <!-- Username Input -->
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edit_text_border"
+        android:hint="Email"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="#333333"
+        android:textColorHint="#888888" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etUsername"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_border"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="#333333"
+        android:textColorHint="#888888" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:layout_marginTop="30dp"
+        android:background="#953718"
+        android:backgroundTint="#FF5F2C"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <!-- Sign Up Text -->
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Don't have an account? Sign Up"
+        android:textColor="#2196F3"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#16697A"
+    android:backgroundTint="#FFFF"
+    android:padding="16dp"
+    tools:context=".Third">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvSignUpTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <!-- Name Input -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="394dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvSignUpTitle"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_text_border"
+        android:hint=" Name"
+        android:inputType="textPersonName" />
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="382dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/etName"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_border"
+        android:hint=" Email"
+        android:inputType="textEmailAddress" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="391dp"
+        android:layout_height="51dp"
+        android:layout_below="@id/etEmail"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_border"
+        android:hint=" Password"
+        android:inputType="textPassword" />
+
+    <!-- Sign Up Button -->
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/design_default_color_primary"
+        android:text="Sign Up"
+        android:textColor="@android:color/white" />
+
+    <!-- Already Have an Account -->
+    <TextView
+        android:id="@+id/tvLoginRedirect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSignUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Already have an account? Login"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#16697A "
+    android:fitsSystemWindows="true"
+    tools:context=".ItineraryGeneratorActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#600025"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#001427"
+            android:title="Itinerary Generator"
+            android:titleTextColor="#FFFFFF"
+            app:navigationIcon="@android:drawable/ic_media_previous"
+            app:navigationIconTint="#FFFFFF" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/itineraryTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:padding="24dp"
+                android:text="ITINERARY"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="#600025"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true" />
+
+            <!-- Day 1 -->
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#FF5F2C"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Day 1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/activitiesTextView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#FFFFFF"
+                android:elevation="2dp"
+                android:lineSpacingExtra="4dp"
+                android:padding="16dp"
+                android:text="Activities here..."
+                android:textColor="#001427"
+                android:textSize="16sp" />
+
+            <!-- Day 2 -->
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#FF5F2C"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Day 2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/activitiesTextView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#FFFFFF"
+                android:elevation="2dp"
+                android:lineSpacingExtra="4dp"
+                android:padding="16dp"
+                android:text="Activities here..."
+                android:textColor="#001427"
+                android:textSize="16sp" />
+
+            <!-- Day 3 -->
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#FF5F2C"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Day 3"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/activitiesTextView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#FFFFFF"
+                android:elevation="2dp"
+                android:lineSpacingExtra="4dp"
+                android:padding="16dp"
+                android:text="Activities here..."
+                android:textColor="#001427"
+                android:textSize="16sp" />
+
+            <!-- Day 4 -->
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#FF5F2C"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Day 4"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/activitiesTextView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#FFFFFF"
+                android:elevation="2dp"
+                android:lineSpacingExtra="4dp"
+                android:padding="16dp"
+                android:text="Activities here..."
+                android:textColor="#001427"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_generate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#600025"
+        android:contentDescription="Generate Itinerary"
+        app:elevation="8dp"
+        app:srcCompat="@android:drawable/ic_menu_compass"
+        app:tint="#FFFFFF" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
