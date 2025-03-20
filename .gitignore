@@ -1,0 +1,52 @@
+# === Android Studio & IntelliJ ===
+.idea/
+*.iml
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
+
+# === Gradle ===
+.gradle/
+build/
+app/build/
+gradle/wrapper/gradle-wrapper.properties
+gradle/wrapper/gradle-wrapper.jar
+
+# === Local machine-specific files ===
+local.properties
+
+# === Logs and error files ===
+*.log
+hs_err_pid*
+replay_pid*
+captures/
+
+# === NDK / CMake generated folders ===
+.cxx/
+.externalNativeBuild/
+
+# === APKs / Bundles ===
+*.apk
+*.ap_
+*.aab
+output.json
+
+# === Keystore (Sensitive Security Files) ===
+*.jks
+*.keystore
+key
+key.pub
+
+# === OS generated ===
+.DS_Store
+Thumbs.db
+
+# === Kotlin-specific ===
+*.kotlin_module
+
+# === Google Services (Sensitive API keys) ===
+google-services.json
+
+# === Android Profiling ===
+*.hprof
+
