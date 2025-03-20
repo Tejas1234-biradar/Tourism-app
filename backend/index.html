@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice & Text Translation</title>
+</head>
+<body>
+    <h1>Text Translation</h1>
+    <form method="POST">
+        <textarea name="text" rows="4" cols="50" placeholder="Enter text to translate..."></textarea><br><br>
+
+        <!-- Language selection dropdown -->
+        <label for="source_lang">Source Language:</label>
+        <select name="source_lang">
+            {% for lang in languages %}
+                <option value="{{ lang }}" {% if lang == source_lang %}selected{% endif %}>{{ lang }}</option>
+            {% endfor %}
+        </select>
+        
+        <label for="dest_lang">Destination Language:</label>
+        <select name="dest_lang">
+            {% for lang in languages %}
+                <option value="{{ lang }}" {% if lang == dest_lang %}selected{% endif %}>{{ lang }}</option>
+            {% endfor %}
+        </select><br><br>
+
+        <input type="submit" value="Translate">
+    </form>
+
+    {% if translated_text %}
+    <h2>Translated Text: {{ translated_text }}</h2>
+    {% endif %}
+    
+    <h1>Voice Translation</h1>
+    <a href="/voice">Click to Start Voice Translation</a>
+</body>
+</html>
